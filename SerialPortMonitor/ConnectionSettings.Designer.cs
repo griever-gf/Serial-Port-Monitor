@@ -269,6 +269,7 @@
             this.cbPortName.Name = "cbPortName";
             this.cbPortName.Size = new System.Drawing.Size(87, 24);
             this.cbPortName.TabIndex = 21;
+            this.cbPortName.SelectedIndexChanged += new System.EventHandler(this.cbPortName_SelectedIndexChanged);
             // 
             // label6
             // 

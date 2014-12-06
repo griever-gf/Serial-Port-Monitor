@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bDisconnect = new System.Windows.Forms.Button();
             this.bConnect = new System.Windows.Forms.Button();
             this.rtbLog = new System.Windows.Forms.RichTextBox();
@@ -45,6 +46,7 @@
             this.clearLogWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmrSendASCIIString = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nudInt32Value)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,10 +74,14 @@
             // 
             // rtbLog
             // 
+            this.rtbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbLog.Location = new System.Drawing.Point(12, 166);
             this.rtbLog.Name = "rtbLog";
             this.rtbLog.Size = new System.Drawing.Size(695, 230);
             this.rtbLog.TabIndex = 10;
+            this.rtbLog.Text = "";
             // 
             // tbASCIIString
             // 
@@ -171,8 +177,8 @@
             // connectionToolStripMenuItem
             // 
             this.connectionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.settingsToolStripMenuItem,
-            this.clearLogWindowToolStripMenuItem});
+            this.clearLogWindowToolStripMenuItem,
+            this.settingsToolStripMenuItem});
             this.connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
             this.connectionToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.connectionToolStripMenuItem.Text = "Tools";
@@ -205,6 +211,10 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // tmrSendASCIIString
+            // 
+            this.tmrSendASCIIString.Interval = 1000;
             // 
             // MainForm
             // 
@@ -251,6 +261,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearLogWindowToolStripMenuItem;
+        private System.Windows.Forms.Timer tmrSendASCIIString;
     }
 }
 
