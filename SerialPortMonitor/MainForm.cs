@@ -221,7 +221,7 @@ namespace SerialPortMonitor
 
                 Queue.Push(Data, Length);
                 String QueueString = Encoding.ASCII.GetString(Queue.Peek(Queue.Length()));
-                int Index = 0, idx; ;
+                int Index = 0;
 
                 while (Index < Queue.Length())
                 {

@@ -42,8 +42,8 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearLogWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrSendASCIIString = new System.Windows.Forms.Timer(this.components);
@@ -54,9 +54,9 @@
             // bDisconnect
             // 
             this.bDisconnect.Enabled = false;
-            this.bDisconnect.Location = new System.Drawing.Point(131, 64);
+            this.bDisconnect.Location = new System.Drawing.Point(146, 64);
             this.bDisconnect.Name = "bDisconnect";
-            this.bDisconnect.Size = new System.Drawing.Size(87, 28);
+            this.bDisconnect.Size = new System.Drawing.Size(100, 33);
             this.bDisconnect.TabIndex = 13;
             this.bDisconnect.Text = "Disconnect";
             this.bDisconnect.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@
             // 
             this.bConnect.Location = new System.Drawing.Point(29, 64);
             this.bConnect.Name = "bConnect";
-            this.bConnect.Size = new System.Drawing.Size(87, 28);
+            this.bConnect.Size = new System.Drawing.Size(100, 33);
             this.bConnect.TabIndex = 12;
             this.bConnect.Text = "Connect";
             this.bConnect.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // bSendASCIIString
             // 
             this.bSendASCIIString.Enabled = false;
-            this.bSendASCIIString.Location = new System.Drawing.Point(588, 51);
+            this.bSendASCIIString.Location = new System.Drawing.Point(588, 43);
             this.bSendASCIIString.Name = "bSendASCIIString";
-            this.bSendASCIIString.Size = new System.Drawing.Size(87, 28);
+            this.bSendASCIIString.Size = new System.Drawing.Size(100, 33);
             this.bSendASCIIString.TabIndex = 15;
             this.bSendASCIIString.Text = "Send";
             this.bSendASCIIString.UseVisualStyleBackColor = true;
@@ -122,9 +122,9 @@
             // bSendInt32
             // 
             this.bSendInt32.Enabled = false;
-            this.bSendInt32.Location = new System.Drawing.Point(588, 108);
+            this.bSendInt32.Location = new System.Drawing.Point(588, 102);
             this.bSendInt32.Name = "bSendInt32";
-            this.bSendInt32.Size = new System.Drawing.Size(87, 28);
+            this.bSendInt32.Size = new System.Drawing.Size(100, 33);
             this.bSendInt32.TabIndex = 19;
             this.bSendInt32.Text = "Send";
             this.bSendInt32.UseVisualStyleBackColor = true;
@@ -183,19 +183,19 @@
             this.connectionToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.connectionToolStripMenuItem.Text = "Tools";
             // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.settingsToolStripMenuItem.Text = "Connection Settings";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
-            // 
             // clearLogWindowToolStripMenuItem
             // 
             this.clearLogWindowToolStripMenuItem.Name = "clearLogWindowToolStripMenuItem";
             this.clearLogWindowToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.clearLogWindowToolStripMenuItem.Text = "Clear Log Box";
             this.clearLogWindowToolStripMenuItem.Click += new System.EventHandler(this.clearLogWindowToolStripMenuItem_Click);
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.settingsToolStripMenuItem.Text = "Connection Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 

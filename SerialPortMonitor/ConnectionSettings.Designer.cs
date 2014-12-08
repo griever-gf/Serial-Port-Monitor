@@ -52,10 +52,10 @@
             // 
             // bCancel
             // 
-            this.bCancel.Location = new System.Drawing.Point(518, 239);
+            this.bCancel.Location = new System.Drawing.Point(492, 265);
             this.bCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bCancel.Name = "bCancel";
-            this.bCancel.Size = new System.Drawing.Size(75, 28);
+            this.bCancel.Size = new System.Drawing.Size(100, 33);
             this.bCancel.TabIndex = 28;
             this.bCancel.Text = "Cancel";
             this.bCancel.UseVisualStyleBackColor = true;
@@ -63,10 +63,10 @@
             // 
             // bSaveSettings
             // 
-            this.bSaveSettings.Location = new System.Drawing.Point(422, 239);
+            this.bSaveSettings.Location = new System.Drawing.Point(368, 265);
             this.bSaveSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bSaveSettings.Name = "bSaveSettings";
-            this.bSaveSettings.Size = new System.Drawing.Size(75, 28);
+            this.bSaveSettings.Size = new System.Drawing.Size(100, 33);
             this.bSaveSettings.TabIndex = 27;
             this.bSaveSettings.Text = "Save";
             this.bSaveSettings.UseVisualStyleBackColor = true;
@@ -74,6 +74,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.lDescription);
             this.groupBox2.Controls.Add(this.lCaption);
             this.groupBox2.Controls.Add(this.lManufacturer);
@@ -94,7 +96,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(603, 206);
+            this.groupBox2.Size = new System.Drawing.Size(603, 234);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Serial Connection";
@@ -102,7 +104,7 @@
             // lDescription
             // 
             this.lDescription.AutoSize = true;
-            this.lDescription.Location = new System.Drawing.Point(21, 101);
+            this.lDescription.Location = new System.Drawing.Point(21, 135);
             this.lDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lDescription.Name = "lDescription";
             this.lDescription.Size = new System.Drawing.Size(79, 17);
@@ -112,7 +114,7 @@
             // lCaption
             // 
             this.lCaption.AutoSize = true;
-            this.lCaption.Location = new System.Drawing.Point(21, 71);
+            this.lCaption.Location = new System.Drawing.Point(21, 105);
             this.lCaption.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCaption.Name = "lCaption";
             this.lCaption.Size = new System.Drawing.Size(56, 17);
@@ -122,7 +124,7 @@
             // lManufacturer
             // 
             this.lManufacturer.AutoSize = true;
-            this.lManufacturer.Location = new System.Drawing.Point(21, 135);
+            this.lManufacturer.Location = new System.Drawing.Point(21, 169);
             this.lManufacturer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lManufacturer.Name = "lManufacturer";
             this.lManufacturer.Size = new System.Drawing.Size(92, 17);
@@ -132,7 +134,7 @@
             // lDeviceID
             // 
             this.lDeviceID.AutoSize = true;
-            this.lDeviceID.Location = new System.Drawing.Point(21, 167);
+            this.lDeviceID.Location = new System.Drawing.Point(21, 201);
             this.lDeviceID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lDeviceID.Name = "lDeviceID";
             this.lDeviceID.Size = new System.Drawing.Size(64, 17);
@@ -142,7 +144,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(376, 36);
+            this.label5.Location = new System.Drawing.Point(380, 36);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 17);
@@ -165,7 +167,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(412, 139);
+            this.label7.Location = new System.Drawing.Point(380, 69);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 17);
@@ -180,7 +182,7 @@
             "1",
             "1.5",
             "2"});
-            this.cbStopBits.Location = new System.Drawing.Point(507, 135);
+            this.cbStopBits.Location = new System.Drawing.Point(473, 66);
             this.cbStopBits.Margin = new System.Windows.Forms.Padding(4);
             this.cbStopBits.Name = "cbStopBits";
             this.cbStopBits.Size = new System.Drawing.Size(79, 24);
@@ -189,7 +191,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(411, 71);
+            this.label8.Location = new System.Drawing.Point(21, 69);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 17);
@@ -203,7 +205,7 @@
             "None",
             "Even",
             "Odd"});
-            this.cbParity.Location = new System.Drawing.Point(507, 66);
+            this.cbParity.Location = new System.Drawing.Point(103, 66);
             this.cbParity.Margin = new System.Windows.Forms.Padding(4);
             this.cbParity.Name = "cbParity";
             this.cbParity.Size = new System.Drawing.Size(77, 24);
@@ -212,7 +214,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(411, 106);
+            this.label9.Location = new System.Drawing.Point(210, 69);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 17);
@@ -227,7 +229,7 @@
             "6",
             "7",
             "8"});
-            this.cbDataBits.Location = new System.Drawing.Point(507, 102);
+            this.cbDataBits.Location = new System.Drawing.Point(280, 66);
             this.cbDataBits.Margin = new System.Windows.Forms.Padding(4);
             this.cbDataBits.Name = "cbDataBits";
             this.cbDataBits.Size = new System.Drawing.Size(77, 24);
@@ -236,7 +238,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(223, 36);
+            this.label10.Location = new System.Drawing.Point(210, 35);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(38, 17);
@@ -255,7 +257,7 @@
             "56000",
             "57600",
             "115200"});
-            this.cbRate.Location = new System.Drawing.Point(271, 32);
+            this.cbRate.Location = new System.Drawing.Point(280, 32);
             this.cbRate.Margin = new System.Windows.Forms.Padding(4);
             this.cbRate.Name = "cbRate";
             this.cbRate.Size = new System.Drawing.Size(80, 24);
@@ -284,7 +286,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 282);
+            this.ClientSize = new System.Drawing.Size(621, 317);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.bCancel);
