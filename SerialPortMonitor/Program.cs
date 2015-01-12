@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using SerialConnectionUtils;
 
 namespace SerialPortMonitor
 {
@@ -13,6 +14,9 @@ namespace SerialPortMonitor
         [STAThread]
         static void Main()
         {
+            ExceptionLogger logger = new ExceptionLogger();
+            logger.AddLogger(new TextFileLogger());
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());

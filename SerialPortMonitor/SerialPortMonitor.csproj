@@ -47,13 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ByteQueue.cs" />
+    <Compile Include="SerialConnectionUtils\ByteQueue.cs" />
     <Compile Include="ConnectionSettings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConnectionSettings.Designer.cs">
       <DependentUpon>ConnectionSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="SerialConnectionUtils\ExceptionLogger.cs" />
     <Compile Include="ExSerialPort.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -63,10 +64,10 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PInvoke.cs" />
+    <Compile Include="SerialConnectionUtils\PInvoke.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerialPortFixer.cs" />
+    <Compile Include="SerialConnectionUtils\SerialPortFixer.cs" />
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="ConnectionSettings.resx">
       <DependentUpon>ConnectionSettings.cs</DependentUpon>
