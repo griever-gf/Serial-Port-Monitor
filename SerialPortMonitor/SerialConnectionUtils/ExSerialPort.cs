@@ -8,6 +8,7 @@ using System.Reflection;
 
 namespace SerialConnectionUtils
 {
+    [System.ComponentModel.DesignerCategory("Code")]
     class ExSerialPort : SerialPort
     {
         public ExSerialPort(string name)

@@ -55,15 +55,13 @@
       <DependentUpon>ConnectionSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="SerialConnectionUtils\ExceptionLogger.cs" />
-    <Compile Include="ExSerialPort.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SerialConnectionUtils\ExSerialPort.cs" />
     <Compile Include="SerialConnectionUtils\PInvoke.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

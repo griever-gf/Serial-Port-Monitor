@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using Microsoft.Win32.SafeHandles;
 
-namespace SerialPortMonitor
+namespace SerialConnectionUtils
 {
     public class SerialPortFixer : IDisposable
     {
