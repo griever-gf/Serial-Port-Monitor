@@ -215,6 +215,7 @@
             // tmrSendASCIIString
             // 
             this.tmrSendASCIIString.Interval = 1000;
+            //this.tmrSendASCIIString.Tick += new System.EventHandler(this.tmrSendASCIIString_Tick);
             // 
             // MainForm
             // 

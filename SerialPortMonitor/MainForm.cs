@@ -204,7 +204,7 @@ namespace SerialPortMonitor
             if (this.InvokeRequired)
             {
                 ProcessDataDelegate Delegate = new ProcessDataDelegate(ProcessDataSub);
-                this.Invoke(Delegate, new object[] { Data, Length });
+                this.BeginInvoke(Delegate, new object[] { Data, Length });
             }
             else
                 ProcessDataSub(Data, Length);
@@ -469,11 +469,10 @@ namespace SerialPortMonitor
             "" + Environment.NewLine +
             "END SCAN GROUP 5     03 DEC 14  02:46:20" + Environment.NewLine +
             ""        };
-            //AddLog(Example, Color.Green);
+            //AddLog(Examples[example_idx], Color.Green);
             byte[] bytesASCII = Encoding.ASCII.GetBytes(Examples[example_idx]);
-            //byte[] bytesASCII = Encoding.ASCII.GetBytes(Examples[2]);
             example_idx = (example_idx + 1) % Examples.Length;
-            spCOM.Write(bytesASCII, 0, bytesASCII.Length);
+            //spCOM.Write(bytesASCII, 0, bytesASCII.Length);
         }
         #endregion
     }
